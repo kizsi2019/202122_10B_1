@@ -1,0 +1,1 @@
+szavak = ['alma', 'barack', 'Attila', 'kávé', 'szekrény', 'asztal']
