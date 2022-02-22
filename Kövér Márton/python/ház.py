@@ -1,0 +1,36 @@
+import turtle
+a = turtle.Screen()
+a.bgcolor("lightgreen")
+a.title("Ház")
+Lala = turtle.Turtle()
+Lala.color("red")
+Lala.pensize(3)
+
+def haz(t, h):
+    for i in range(3):
+        t.forward(50)
+        t.left(120)
+    t.right(90)
+    for i in range(4):
+        t.forward(50)
+        t.left(90)
+    t.penup()
+    t.left(90)
+    t.forward(15)
+    t.right(90)
+    t.forward(20)
+    t.pendown()
+    for i in range(2):
+        t.forward(30)
+        t.left(90)
+        t.forward(20)
+        t.left(90)
+    t.penup()
+    t.left(180)
+    t.forward(20)
+    t.left(90)
+    t.forward(15)
+    t.left(180)
+    t.pendown()
+haz(Lala, 40)
+a.mainloop()
