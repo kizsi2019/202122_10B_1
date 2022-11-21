@@ -1,0 +1,15 @@
+SELECT allomas.nev, allomas.orszag
+FROM allomas
+WHERE NOT allomas.orszag = ""
+ORDER BY allomas.nev;
+
+SELECT allomas.nev , allomas.tipus,hely.tav
+FROM allomas , hely
+WHERE hely.vonalid = "80"
+     AND allomas.mukodo
+     AND allomas.id = hely.allomasid
+ORDER BY hely.tav;
+
+SELECT hely.vonalid, 
+MAX(hely.tav) 
+FROM hely GROUP BY hely.vonalid; 
