@@ -1,0 +1,32 @@
+-- A feladatok megoldására elkészített SQL parancsokat illessze be a feladat sorszáma után!
+
+
+-- 1. feladat:
+CREATE DATABASE FORMULA1
+DEFAULT CHARSET = utf8
+COLLATE utf8_hungarian_ci;
+
+
+-- 3. feladat:
+UPDATE nagydijak
+set korokszama = 70 
+WHERE nev ='HUNGARIAN GRAND PRIX'; 
+
+
+-- 4. feladat:
+SELECT vezeteknev,  rajtszam, csapatnev,
+2019-year(szuletesidatum) AS eletkor 
+FROM pilotak 
+ORDER BY eletkor DESC;
+
+
+
+
+-- 5. feladat:
+SELECT nagydijak.nev, pilotak.vezeteknev, pilotak.keresztnev, nagydijak.versenynap
+FROM eredmenyek join 
+nagydijak ON eredmenyek
+
+
+-- 6. feladat:
+
